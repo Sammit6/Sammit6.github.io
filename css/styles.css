@@ -493,7 +493,17 @@ mark,
   max-width: 100%;
   height: auto;
 }
-
+.img-profile {
+    display: block !important;
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 768px) {
+    .img-profile {
+        width: 150px;  /* Adjust size for mobile */
+        height: auto;
+    }
+}
 .figure {
   display: inline-block;
 }
