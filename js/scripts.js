@@ -38,5 +38,39 @@
     $("body").scrollspy({
         target: "#mainNav"
     });
+document.addEventListener("DOMContentLoaded", function () {
+    var profileImage = document.getElementById("profileImage");
+    var modal = document.createElement("div");
+    modal.id = "imagePopup";
+    modal.classList.add("popup");
+
+    // Create modal content
+    modal.innerHTML = `
+        <span class="close">&times;</span>
+        <img class="popup-content" id="popupImage">
+    `;
+    document.body.appendChild(modal);
+
+    var popupImage = document.getElementById("popupImage");
+    var closeButton = modal.querySelector(".close");
+
+    // Open modal on image click
+    profileImage.addEventListener("click", function () {
+        popupImage.src = this.src;
+        modal.style.display = "block";
+    });
+
+    // Close modal when clicking close button
+    closeButton.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    // Close modal when clicking outside the image
+    modal.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});
 
 })(jQuery); // End of use strict
