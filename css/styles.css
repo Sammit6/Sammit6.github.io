@@ -199,7 +199,7 @@ figure {
 }
 
 img {
-  vertical-align:left;
+  vertical-align:middle;
   border-style: none;
 }
 
@@ -494,14 +494,16 @@ mark,
   height: auto;
 }
 .img-profile {
-    display: block !important;
+    display: block;
     max-width: 100%;
     height: auto;
+    margin: 20px auto; /* Adds space around the image */
 }
 @media (max-width: 768px) {
     .img-profile {
-        width: 150px;  /* Adjust size for mobile */
+        width: 120px; /* Adjust width for mobile */
         height: auto;
+        margin: 10px auto;
     }
 }
 .figure {
