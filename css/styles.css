@@ -10134,7 +10134,7 @@ p.lead {
     margin: auto auto 0;
     padding: 0.5rem;
   }
-.navbar-brand img {
+ #sideNav.navbar-brand img {
     width: 50px; /* Adjust as needed */
     height: 50px;
     border-radius: 50%; /* Makes it a perfect circle */
