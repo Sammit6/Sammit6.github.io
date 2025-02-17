@@ -199,7 +199,7 @@ figure {
 }
 
 img {
-  vertical-align:middle;
+  vertical-align: middle;
   border-style: none;
 }
 
@@ -493,60 +493,7 @@ mark,
   max-width: 100%;
   height: auto;
 }
-.img-profile {
-    display: block;
-    width: 180px; /* Set a fixed width */
-    height: 180px; /* Ensure it's equal to width */
-    border-radius: 50%; /* Makes it circular */
-    object-fit: cover; /* Ensures the image covers the circular area */
-    margin: 0 auto; /* Center align */
-    border: 5px solid white; /* Optional: Adds a border */
-}
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-    .img-profile {
-        width: 140px; /* Reduce size on mobile */
-        height: 140px;
-        margin-bottom: 20px; /* Adds space between the image and heading */
-    }
-
-    /* Ensure the heading does not overlap */
-    .resume-section-content {
-        text-align: center; /* Center align heading and text */
-        padding-top: 20px; /* Add spacing at the top */
-    }
-}
-.popup {
-    display: none; /* Initially hidden */
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    text-align: center;
-    padding-top: 100px;
-}
-
-/* Popup Image */
-.popup-content {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 10px;
-}
-
-/* Close Button */
-.close {
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-}
 .figure {
   display: inline-block;
 }
@@ -4038,12 +3985,13 @@ input[type=button].btn-block {
   justify-content: space-between;
 }
 .navbar-brand {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
-
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
 }
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
@@ -5742,31 +5690,6 @@ a.close.disabled {
   text-align: center;
   background-color: #000;
   border-radius: 0.25rem;
-}
-/* Navbar Profile Image */
-.navbar-profile {
-    width: 60px; /* Adjust size as needed */
-    height: 60px;
-    border-radius: 50%; /* Makes it circular */
-    object-fit: cover; /* Ensures image fits properly */
-    display: block;
-    margin: auto;
-}
-
-/* Center the image inside the navbar */
-.navbar-brand {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
-
-/* Mobile Fixes */
-@media (max-width: 768px) {
-    .navbar-profile {
-        width: 45px; /* Reduce size for mobile */
-        height: 45px;
-    }
 }
 
 .popover {
@@ -9980,11 +9903,6 @@ a.text-dark:hover, a.text-dark:focus {
 .text-decoration-none {
   text-decoration: none !important;
 }
-.portrait {
-  width: 300px;
-  border-radius: var(--border-radius);
-  flex-shrink: 0;
-}
 
 .text-break {
   word-break: break-word !important;
@@ -10150,7 +10068,7 @@ p.lead {
     left: 0;
     display: flex;
     flex-direction: column;
-    width: 18rem;
+    width: 17rem;
     height: 100vh;
   }
   #sideNav .navbar-brand {
@@ -10158,20 +10076,10 @@ p.lead {
     margin: auto auto 0;
     padding: 0.5rem;
   }
- #sideNav.navbar-brand img {
-    width: 50px; /* Adjust as needed */
-    height: 50px;
-    border-radius: 50%; /* Makes it a perfect circle */
-    object-fit: cover; /* Ensures the image fits well inside the circle */
-    display: block;
-    margin: auto;
-}
-@media (max-width: 768px) {
-    .navbar-brand img {
-        width: 40px; /* Reduce size for smaller screens */
-        height: 40px;
-    }
-}
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse {
     display: flex;
