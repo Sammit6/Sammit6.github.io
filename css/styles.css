@@ -5743,6 +5743,31 @@ a.close.disabled {
   background-color: #000;
   border-radius: 0.25rem;
 }
+/* Navbar Profile Image */
+.navbar-profile {
+    width: 60px; /* Adjust size as needed */
+    height: 60px;
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures image fits properly */
+    display: block;
+    margin: auto;
+}
+
+/* Center the image inside the navbar */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Mobile Fixes */
+@media (max-width: 768px) {
+    .navbar-profile {
+        width: 45px; /* Reduce size for mobile */
+        height: 45px;
+    }
+}
 
 .popover {
   position: absolute;
