@@ -10134,10 +10134,20 @@ p.lead {
     margin: auto auto 0;
     padding: 0.5rem;
   }
-  #sideNav .navbar-brand .img-profile {
-    width: 15rem;
-    height:20rem;
-    border: 0.1rem solid rgba(255, 255, 255, 0.2);
+.navbar-brand img {
+    width: 50px; /* Adjust as needed */
+    height: 50px;
+    border-radius: 50%; /* Makes it a perfect circle */
+    object-fit: cover; /* Ensures the image fits well inside the circle */
+    display: block;
+    margin: auto;
+}
+@media (max-width: 768px) {
+    .navbar-brand img {
+        width: 40px; /* Reduce size for smaller screens */
+        height: 40px;
+    }
+}
   }
   #sideNav .navbar-collapse {
     display: flex;
