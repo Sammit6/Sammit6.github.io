@@ -495,15 +495,26 @@ mark,
 }
 .img-profile {
     display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 20px auto; /* Adds space around the image */
+    width: 180px; /* Set a fixed width */
+    height: 180px; /* Ensure it's equal to width */
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures the image covers the circular area */
+    margin: 0 auto; /* Center align */
+    border: 5px solid white; /* Optional: Adds a border */
 }
+
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     .img-profile {
-        width: 120px; /* Adjust width for mobile */
-        height: auto;
-        margin: 10px auto;
+        width: 140px; /* Reduce size on mobile */
+        height: 140px;
+        margin-bottom: 20px; /* Adds space between the image and heading */
+    }
+
+    /* Ensure the heading does not overlap */
+    .resume-section-content {
+        text-align: center; /* Center align heading and text */
+        padding-top: 20px; /* Add spacing at the top */
     }
 }
 .popup {
