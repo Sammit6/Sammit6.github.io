@@ -485,13 +485,10 @@ mark,
 .img-profile {
     display: block;
     margin: 0 auto;
-    width: 25%; /* Reduce for large screens */
-    max-width: 200px;
-    aspect-ratio: 1 / 1; 
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     object-fit: cover;
 }
-
 @media (max-width: 768px) {
     .img-profile {
         width: 50%;
