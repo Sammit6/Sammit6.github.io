@@ -481,9 +481,14 @@ mark,
 }
 
 .img-fluid {
-  max-width: 20%;
+  max-width: 100%;
   height: auto;
 }
+ .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
 
 .img-thumbnail {
   padding: 0.25rem;
