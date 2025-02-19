@@ -481,12 +481,12 @@ mark,
 }
 
 .img-fluid {
-  width: 6in;
-  height: 6in;
+  width: auto;
+  height: auto;
 }
 .img-profile {
-    width: 6in; /* Increase the width */
-    height: 6in; /* Increase the height */
+    width: 4.5in; /* 150% of the original 3in */
+    height: 4.5in; /* Maintain aspect ratio */
     object-fit: cover; /* Ensures the image is properly framed */
     border-radius: 5px; /* Slightly rounded edges, optional */
     border: 0.2rem solid rgba(255, 255, 255, 0.5);
@@ -498,6 +498,7 @@ mark,
         width: 2.5in;
         height: 2.5in;
     }
+}
 }
 .img-thumbnail {
   padding: 0.25rem;
