@@ -481,12 +481,12 @@ mark,
 }
 
 .img-fluid {
-  width: 4in;
-  height: 4in;
+  width: 6in;
+  height: 6in;
 }
 .img-profile {
-    width: 4in; /* Increase the width */
-    height: 4in; /* Increase the height */
+    width: 6in; /* Increase the width */
+    height: 6in; /* Increase the height */
     object-fit: cover; /* Ensures the image is properly framed */
     border-radius: 5px; /* Slightly rounded edges, optional */
     border: 0.2rem solid rgba(255, 255, 255, 0.5);
