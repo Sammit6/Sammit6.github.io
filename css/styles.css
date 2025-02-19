@@ -485,16 +485,15 @@ mark,
   height: auto;
 }
 .img-profile {
-  width: 150px; /* Smaller width */
-  height: 180px; /* Smaller height, maintaining portrait ratio */
+  width: 150px; /* Smaller on desktop */
+  height: 180px; /* Smaller on desktop, maintaining portrait ratio */
   object-fit: cover;
 }
 
-/* Optional: Media query for even smaller on mobile */
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* Example breakpoint for smaller screens (mobile) */
   .img-profile {
-    width: 120px;
-    height: 144px;
+    width: 180px; /* Bigger on mobile */
+    height: 216px; /* Bigger on mobile, maintaining portrait ratio */
   }
 }
 
