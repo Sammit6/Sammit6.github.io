@@ -484,6 +484,19 @@ mark,
   max-width: 100%;
   height: auto;
 }
+.img-profile {
+  width: 150px; /* Smaller width */
+  height: 180px; /* Smaller height, maintaining portrait ratio */
+  object-fit: cover;
+}
+
+/* Optional: Media query for even smaller on mobile */
+@media (max-width: 768px) {
+  .img-profile {
+    width: 120px;
+    height: 144px;
+  }
+}
 
 .img-thumbnail {
   padding: 0.25rem;
