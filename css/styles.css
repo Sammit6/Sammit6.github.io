@@ -489,19 +489,8 @@ mark,
     border-radius: 50%;
     object-fit: cover;
 }
-@media (max-width: 768px) {
-    .img-profile {
-        width: 50%;
-        max-width: 180px;
-    }
-}
 
-@media (max-width: 480px) {
-    .img-profile {
-        width: 70%;
-        max-width: 160px;
-    }
-}
+
 
 
 .img-thumbnail {
