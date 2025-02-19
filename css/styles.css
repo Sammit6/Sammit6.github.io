@@ -483,13 +483,11 @@ mark,
 
 }
 .img-profile {
+    max-width: 150px; /* Restrict maximum width */
+    height: auto; /* Maintain aspect ratio */
     display: block;
     margin: 0 auto;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    object-fit: cover;
 }
-
 
 
 
