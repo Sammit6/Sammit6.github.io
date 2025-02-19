@@ -484,11 +484,21 @@ mark,
   max-width: 100%;
   height: auto;
 }
- .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
-  }
+.img-profile {
+    width: 2in; /* Standard passport photo width */
+    height: 2in; /* Standard passport photo height */
+    object-fit: cover; /* Ensures the image is properly framed */
+    border-radius: 5px; /* Slightly rounded edges, optional */
+    border: 0.2rem solid rgba(255, 255, 255, 0.5);
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .img-profile {
+        width: 1.5in;
+        height: 1.5in;
+    }
+}
 
 .img-thumbnail {
   padding: 0.25rem;
