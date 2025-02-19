@@ -483,7 +483,7 @@ mark,
 
 }
 .img-profile {
-    max-width: 150px; /* Restrict maximum width */
+    max-width: 20px; /* Restrict maximum width */
     height: auto; /* Maintain aspect ratio */
     display: block;
     margin: 0 auto;
